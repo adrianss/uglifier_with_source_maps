@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "sprockets", "~> 2.2.2"
-  spec.add_runtime_dependency "actionpack", "~> 3.2.19"
+  spec.add_runtime_dependency "actionpack", "~> 3.2.18"
   spec.add_runtime_dependency "uglifier", ">= 2.5.0"
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"

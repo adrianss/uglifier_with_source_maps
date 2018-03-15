@@ -59,7 +59,7 @@ rake assets:precompile
 ## Dependencies
 * uglifier    >= 2.5
 * sprockets   ~> 2.2.2
-* actionpack  ~> 3.2.19
+* actionpack  ~> 3.2.18
 
 ## Contributing
 
