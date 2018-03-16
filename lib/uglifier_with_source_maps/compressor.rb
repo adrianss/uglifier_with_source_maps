@@ -34,7 +34,7 @@ module UglifierWithSourceMaps
       File.open(File.join(Rails.public_path, sourcemap_filename), "w") { |f| f.puts map.to_json }
       File.open(File.join(Rails.public_path, concatenated_filename), "w") {|f| f.write(data)}
 
-      sourcemap_comment = "//# sourceMappingUrl=#{sourcemap_filename}\n"
+      sourcemap_comment = "//#sourceMappingUrl=#{sourcemap_filename}\n"
 
       return sourcemap_comment + minified_data
     end
