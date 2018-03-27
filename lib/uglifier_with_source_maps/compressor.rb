@@ -22,8 +22,7 @@ module UglifierWithSourceMaps
       sourcemap_filename    = [Rails.application.config.assets.prefix, Rails.application.config.assets.sourcemaps_prefix, "#{context.logical_path}-#{digest(minified_data)}.map"].join('/')
       concatenated_filename = [Rails.application.config.assets.prefix, Rails.application.config.assets.uncompressed_prefix, "#{context.logical_path}-#{digest(minified_data)}.js"].join('/')
 
-      sourcemap_comment = "//# sourceMappingURL=#{sourcemap_filename}\n"
-      result = sourcemap_comment + minified_data
+      result = minified_data
 
       minified_filename     = [Rails.application.config.assets.prefix, "#{context.logical_path}-#{digest(result)}.js"].join('/')
 
