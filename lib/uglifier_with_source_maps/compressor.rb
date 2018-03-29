@@ -19,7 +19,7 @@ module UglifierWithSourceMaps
       minified_data, sourcemap = @uglifier.compile_with_map(data)
 
       # write source map
-      sourcemap_filename    = [Rails.application.config.assets.prefix, Rails.application.config.assets.sourcemaps_prefix, "#{context.logical_path}-#{digest(minified_data)}.map"].join('/')
+      sourcemap_filename    = [Rails.application.config.assets.prefix, Rails.application.config.assets.sourcemaps_prefix, "#{context.logical_path}-#{digest(minified_data)}.js.map"].join('/')
       concatenated_filename = [Rails.application.config.assets.prefix, Rails.application.config.assets.uncompressed_prefix, "#{context.logical_path}-#{digest(minified_data)}.js"].join('/')
 
       result = minified_data
